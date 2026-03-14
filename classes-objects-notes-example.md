@@ -13,3 +13,31 @@ stop()
 An object is specific instance created from that blueprint.
 Example- Car1= BMW
 Car2= Audi
+
+'''Exmple Java 
+
+class Pen {
+String color;
+String type;
+
+void write() {
+System.out.println("writing with the Pen");
+}
+}
+public class Main {
+
+    public static void main(String[] args) {
+
+        Pen pen1 = new Pen();
+
+        pen1.color = "Blue";
+        pen1.type = "Gel";
+
+        System.out.println("Pen color: " + pen1.color);
+        System.out.println("Pen type: " + pen1.type);
+
+        pen1.write();
+    }
+}
+'''
+
