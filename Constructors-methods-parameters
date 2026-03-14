@@ -1,0 +1,45 @@
+## What is constructor 
+A constrcutor is a special method that runs when you  create a new object with keyword "new"
+**It has the same name as class but no return type, it called automatically when an object is created
+
+## this refers to the current object instance. It's commonly used in constructors to distinguished between field and a parameter 
+e.g- this.name 
+
+## Methods & Parametrs 
+methods are blocks of  reusable code that perform specific tasks.They can accept input parameters and return output values.
+It defines behaviour of an object 
+
+
+##Java has garbage collector  hence java has no deconstructor.
+
+
+'''Example 
+class Pen{
+String color;
+String type;
+
+//constructor 
+Pen(String pencolor , String pentype) {
+color = pencolor;
+type = pentype;
+}
+
+ // Method without parameter
+    void display() {
+        System.out.println("Pen Color: " + color);
+        System.out.println("Pen Type: " + type);
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Pen pen1 = new Pen("Blue", "Gel");
+
+        pen1.display();
+        pen1.write("Writing notes with my pen");
+    }
+}
+
+
