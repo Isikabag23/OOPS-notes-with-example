@@ -1,0 +1,38 @@
+// In object oriented programming we combine a group of variable and function into a unit. We called the unit as "Object"
+// Where variable (x)= properties 
+// Functions f(x)= methods
+
+///Encapsulation 
+In object oriented programming encapsulation means combining data and the functions that can work on that data in a single unit like a class.
+--can achived by 1. Public getter & setter methods , 2.Private data members  
+
+// declare the data as private 
+using getter , setter methods the access can controlled publically.
+
+'''Example 
+class Student 
+{
+private int Rollno ;
+private String name ;
+//Getter and settter 
+public void setRollno(int r)
+{
+Rollno = r;
+}
+public int getRollno()
+{
+return Rollno;
+}
+}
+public class Demo
+{
+public static void main(String [] ags)
+{
+Student s1=new Student();
+s1.setRollno(30);
+//s1.name(Alex);
+System.out.println(s1.getRollno());
+}
+
+'''
+}
